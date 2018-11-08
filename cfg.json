@@ -5,9 +5,10 @@
         "token": ""
     },
     "smtp": {
-        "addr": "mail.example.com:25",
-        "username": "falcon@example.com",
-        "password": "123456",
-        "from": "falcon@example.com"
+        "host": "mail.genomics.cn",
+        "port": 587,
+        "username": "zhoutong@genomics.cn",
+        "password": "*******",
+        "from": "zhoutong@genomics.cn"
     }
 }
