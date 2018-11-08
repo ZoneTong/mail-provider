@@ -5,7 +5,6 @@ import (
 	"github.com/ZoneTong/mail-provider/config" // "github.com/toolkits/smtp"
 	"github.com/farmerx/mail"
 	"github.com/toolkits/web/param"
-	"log"
 	"net/http"
 	"strings"
 )
@@ -35,7 +34,7 @@ func configProcRoutes() {
 
 		email := mail.NewEMail(string(server))
 		email.Auth = mail.NTLMAuth(email.Host, email.Username, email.Password, mail.NTLMVersion1)
-		log.Println(email)
+		// log.Println(email)
 		email.To = strings.Split(tos, ",")
 		email.Subject = subject
 		email.Text = content
