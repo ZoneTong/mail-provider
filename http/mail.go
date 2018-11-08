@@ -34,7 +34,6 @@ func configProcRoutes() {
 
 		email := mail.NewEMail(string(server))
 		email.Auth = mail.NTLMAuth(email.Host, email.Username, email.Password, mail.NTLMVersion1)
-		// log.Println(email)
 		email.To = strings.Split(tos, ",")
 		email.Subject = subject
 		email.Text = content
