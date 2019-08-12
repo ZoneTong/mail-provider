@@ -24,6 +24,7 @@ func configProcRoutes() {
 		subject := param.MustString(r, "subject")
 		content := param.MustString(r, "content")
 		// tos = strings.Replace(tos, ",", ";", -1)
+		log.Println(tos, subject, content)
 
 		// s := smtp.New(cfg.Smtp.Addr, cfg.Smtp.Username, cfg.Smtp.Password)
 		// err := s.SendMail(cfg.Smtp.From, tos, subject, content)
@@ -35,7 +36,6 @@ func configProcRoutes() {
 
 		email := mail.NewEMail(string(server))
 		email.Auth = mail.NTLMAuth(email.Host, email.Username, email.Password, mail.NTLMVersion1)
-		log.Println(email)
 		email.To = strings.Split(tos, ",")
 		email.Subject = subject
 		email.Text = content

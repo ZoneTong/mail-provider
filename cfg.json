@@ -1,14 +1,14 @@
 {
     "debug": true,
     "http": {
-        "listen": "0.0.0.0:4000",
+        "listen": "0.0.0.0:10086",
         "token": ""
     },
     "smtp": {
         "host": "mail.genomics.cn",
         "port": 587,
-        "username": "zhoutong@genomics.cn",
-        "password": "*******",
-        "from": "zhoutong@genomics.cn"
+        "username": "bgi-chain@genomics.cn",
+        "password": "bgi_bc_409",
+        "from": "bgi-chain@genomics.cn"
     }
 }
