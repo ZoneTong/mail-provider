@@ -5,7 +5,6 @@ import (
 	"github.com/ZoneTong/mail-provider/config" // "github.com/toolkits/smtp"
 	"github.com/farmerx/mail"
 	"github.com/toolkits/web/param"
-	"log"
 	"net/http"
 	"strings"
 )
